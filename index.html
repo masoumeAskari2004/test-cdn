@@ -5,43 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>پروژه CDN من</title>
   <style>
+    /* Reset ساده */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Tahoma, sans-serif;
-      background-color: #f5f6fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
       color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+      max-width: 480px;
       text-align: center;
     }
+
     h1 {
-      color: #2f3640;
-      margin-bottom: 10px;
+      font-size: 2.4rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
     }
+
     p {
-      font-size: 18px;
-      margin-top: 0;
-      margin-bottom: 20px;
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 25px;
     }
-    img {
-      max-width: 200px;
-      margin-top: 20px;
-    }
+
     a {
-      color: #40739e;
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 25px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
     }
+
     a:hover {
-      text-decoration: underline;
+      background-color: #2980b9;
+    }
+
+    img {
+      max-width: 150px;
+      margin-bottom: 20px;
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
-  <h1>خوش آمدید به پروژه CDN من!</h1>
-  <p>این یک سایت نمونه است که روی GitHub Pages میزبانی شده و توسط Cloudflare Worker بهینه شده.</p>
-  <img src="https://avatars.githubusercontent.com/u/9919?s=280&v=4" alt="لوگو گیت‌هاب" />
-  <p>
-    برای دیدن مخزن پروژه روی  
-    <a href="https://github.com/masoumeAskari2004/test-cdn" target="_blank" rel="noopener">گیت‌هاب کلیک کنید</a>.
-  </p>
+  <div class="container">
+    <h1>خوش آمدید به پروژه CDN من!</h1>
+    <p>این یک سایت نمونه است که روی GitHub Pages میزبانی شده و توسط Cloudflare Worker بهینه شده.</p>
+    <img src="https://avatars.githubusercontent.com/u/9919?s=280&v=4" alt="لوگو گیت‌هاب" />
+    <p>
+      برای دیدن مخزن پروژه روی  
+      <a href="https://github.com/masoumeAskari2004/test-cdn" target="_blank" rel="noopener">گیت‌هاب کلیک کنید</a>.
+    </p>
+  </div>
 </body>
 </html>
